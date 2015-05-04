@@ -1,0 +1,45 @@
+TP 10 LABD
+
+Kevin Franquenouille
+
+
+
+Exercice 1
+Question 1 :
+ -> voir fichier ex1-1.turtle
+
+Question 2 : 
+ -> voir ficheir ex1-2.turtle
+
+
+Exercice 2
+ -> voir fichier ex2.turtle
+
+
+Exercice 3
+ -> voir fichier ex3.turtle (2 façons de faire)
+
+
+Exercice 4
+Question 1 :
+ (stg:Personne , rdf:type , rdf:Class)
+ (stg:Stagiaire , rdf:type , rdf:Class)
+ (stg:Stagiaire , rdfs:subClassOf , stg:Personne)
+ (stg:Tuteur , rdf:type , rdf:Class)
+ (stg:Tuteur , rdfs:subClassOf , stg:Personne)
+ (stg:Ali , stg:encadre , stg:Louis)
+ (stg:encadre , rdf:type , rdf:Property)
+ (stg:encadre , rdfs:domain , stg:Tuteur)
+ (stg:encadre , rdfs:range , stg:Stagiaire)
+ (stg:encadre , rdfs:subPropertyOf , <http://xmlns.com/foaf/0.1/knows>)
+
+Qestion 2 :
+ (stg:Tuteur , rdf:type , stg:Personne)
+ (stg:Stagiaire , rdf:type , stg:Personne)
+ (stg:Ali , rdf:type , stg:Tuteur)
+ (stg:Louis , rdf:type , stg:Stagiaire)
+ (stg:Ali , <http://xmlns.com/foaf/0.1/knows> , stg:Louis)
+
+
+Exercice 5
+

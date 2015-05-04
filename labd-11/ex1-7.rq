@@ -1,0 +1,7 @@
+PREFIX ns0: <http://www.inria.fr/2007/09/11/humans.rdfs#>
+SELECT DISTINCT ?x ?y
+WHERE {
+     ?x ns0:shirtsize ?z
+     ?y ns0:shirtsize ?z
+     FILTER (?x < ?y)
+}

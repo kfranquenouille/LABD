@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<exo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ex1.xsd">
+	
+	<q1>02:32:42</q1>
+	<q2>-42</q2>
+	<q3>toto</q3>
+	<q4>gif</q4>
+	<q5>1234567891011</q5>
+
+</exo>

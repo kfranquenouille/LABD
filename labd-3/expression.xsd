@@ -1,0 +1,31 @@
+<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  
+  <xsd:element type="xsd:byte" name="cons"/>
+  <xsd:element type="xsd:string" name="var"/>
+
+  <xsd:attribute name="val">
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:pattern value="\+|-|\*|/"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:attribute>
+
+  <xsd:complexType name="operationVar1">
+    <xsd:choice minOccurs="2" maxOccurs="2">
+      <xsd:element ref="var"/>
+      <xsd:element ref="cons"/>
+      <xsd:element name="op" type="operationVar1"/>
+    </xsd:choice>
+      <xsd:attribute ref="val"/>
+  </xsd:complexType>
+
+  <xsd:element name="expr">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="op" type="operationVar1"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+</xsd:schema>

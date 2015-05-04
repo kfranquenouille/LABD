@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item>
+	<livre titre="labd">
+		<nom>toto</nom>
+	</livre>
+	<livre titre="labd">
+		<nom>tutu</nom>
+	</livre>
+	<livre>
+		<nom>titi</nom>
+	</livre>
+</item>

@@ -1,0 +1,28 @@
+TP4 LABD 
+
+Kevin Franquenouille
+
++------------------------------+
+
+
+
+Exercice 1
+--> voir championnat.xsd
+
+Exercice 2
+--> voir examen1.xsd & examen2.xsd
+
+Exercice 3
+--> voir a.xsd & b.xsd
+
+Exercice 4
+1/ voir personnes.xsd
+
+2/ On remarque pour la requete //* on recupère tous les champs du fichier xml alors qu'avec //nom on ne récupère rien. Cela est du à l'espace de nom qui n'est pas reconnu par XPATH.
+
+3/ En XPATH 2.0 : 
+	declare namespace bda = "http://www.fil.univ-lille1.fr/labd" ;
+	//bda:naissance[../bda:sexe[text()="M"]]
+
+Exercice 5
+--> voir Exo5.xsd

@@ -1,0 +1,21 @@
+@prefix sps:  <http://www.labd.org/2015/sport/schema#> 
+@prefix hms:  <http://www.inria.fr/2007/09/11/humans.rdfs#> 
+@prefix spi: <http://www.labd.org/2015/sport/instance#>
+SELECT  ?x ?z
+WHERE 
+{ 
+	{
+		?sport rdfs:subClassOf sps:SportCollectif
+		?x a ?sport
+		?x sps:match ?list
+		?list sps:duree ?z
+		FILTER (isLiteral(?z))
+	}
+	UNION {
+		?sport rdfs:subClassOf sps:SportCollectif
+		?x a ?sport
+		?x sps:match ?list
+		?list sps:duree ?y
+		?y rdfs:member ?z
+	}
+}

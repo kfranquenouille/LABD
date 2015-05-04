@@ -1,0 +1,15 @@
+<!ELEMENT itineraire (depart,arrivee,date,heure,mode,preferences,vitesseMarche,duree,etapes)>
+	<!ELEMENT depart (#PCDATA)>
+	<!ELEMENT arrivee (#PCDATA)>
+	<!ELEMENT date (#PCDATA)>
+	<!ELEMENT heure (#PCDATA)>
+	<!ELEMENT mode (#PCDATA)>
+	<!ATTLIST mode ligne CDATA "">
+	<!ELEMENT preferences (#PCDATA)>
+	<!ELEMENT vitesseMarche (#PCDATA)>
+	<!ELEMENT duree (#PCDATA)>
+	<!ELEMENT etapes (etape+)>
+	<!ELEMENT etape ((depart,arrivee,mode,duree)|(heure,mode,direction,duree)|(heure,arrivee)|(correspondance,duree))>
+	<!ATTLIST etape netape CDATA "">
+		<!ELEMENT correspondance (#PCDATA)>
+		<!ELEMENT direction (#PCDATA)>

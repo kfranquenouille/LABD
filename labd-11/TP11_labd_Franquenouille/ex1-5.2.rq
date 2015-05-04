@@ -1,0 +1,6 @@
+PREFIX ns0: <http://www.inria.fr/2007/09/11/humans.rdfs#>
+DESCRIBE ?x
+WHERE {
+     ?x ns0:name "John"
+     ?x ?y ?z
+}

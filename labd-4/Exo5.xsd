@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:insee="http://xml.insee.fr/schema" xmlns="http://www.lifl.fr/livret" targetNamespace="http://www.lifl.fr/livret">
+ 
+<xs:import namespace="http://xml.insee.fr/schema" schemaLocation="http://xml.insee.fr/schema/individu.xsd"/>
+
+	<xs:complexType name="livret">
+		<xs:sequence>
+			<xs:element name="parents"  type="parents_type" maxOccurs="1"/>
+			<xs:element name="enfantCommun" type="insee:NaissanceType" maxOccurs="unbounded"/>
+			<xs:element name="deces" type="deces">
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="deces">
+		<xs:sequence>
+			<xs:element name="DateDeces" type="insee:DateSoupleType"/>
+               		<xs:element name="LieuDeces" type="insee:LieuType"/>
+               		<xs:element name="membre">
+	               		<xs:simpleType>
+				    <xs:restriction base="xs:string">
+				      <xs:enumeration value="époux"/>
+				      <xs:enumeration value="épouse"/>
+				      <xs:enumeration value="enfant"/>
+				      <xs:enumeration value="père"/>
+				      <xs:enumeration value="mère"/>
+				    </xs:restriction>
+				  </xs:simpleType>
+			  </xs:element>
+		</xs:sequence>	
+	</xs:complexType>
+	
+	<xs:complexType name="parents_type">
+		<xs:sequence>
+			<xs:element name="pere" type="insee:IndividuSansFiliationType"/>
+			<xs:element name="mere" type="insee:IndividuSansFiliationType"/>
+			<xs:element name="mariage" type="mariage">
+			</xs:element>	
+		</xs:sequence>	
+	</xs:complexType>
+	
+	<xs:complexType name="mariage">
+	  	<xs:sequence>
+		   	<xs:element name="DateMariage" type="insee:DateSoupleType"/>
+	               	<xs:element name="LieuMariage" type="insee:LieuType"/>
+	    	</xs:sequence>
+	  </xs:complexType>
+
+	 <xs:element name="livret" type="livret"/>
+
+ 
+
+</xs:schema>

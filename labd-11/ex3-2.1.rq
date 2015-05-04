@@ -1,0 +1,7 @@
+PREFIX ns0: <http://www.inria.fr/2007/09/11/humans.rdfs#>
+SELECT ?x ?z
+WHERE {
+     ?y rdfs:subClassOf ns0:Male
+     ?x rdf:type ?y
+     ?x ns0:hasSpouse ?z
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<exo1>
+	<pays pnumber="p1">
+		<nom>France</nom>
+		<capitale>Paris</capitale>
+		<population date="2007">64 102 000</population>
+	</pays>
+	<pays pnumber="p2">
+		<nom>Italie</nom>
+		<capitale>Rome</capitale>
+		<population>58 133 509</population>
+	</pays>	
+	<pays pnumber="p3">
+		<nom>Espagne</nom>
+		<capitale>Madrid</capitale>
+		<population date="2006">44 708 964</population>
+	</pays>
+</exo1>

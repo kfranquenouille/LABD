@@ -1,0 +1,9 @@
+@prefix sps:  <http://www.labd.org/2015/sport/schema#> 
+@prefix hms:  <http://www.inria.fr/2007/09/11/humans.rdfs#> 
+@prefix spi: <http://www.labd.org/2015/sport/instance#>
+SELECT  ?s (COUNT(DISTINCT ?o ) AS ?count )
+WHERE 
+{ 
+	?s sps:pratique ?o 
+} 
+GROUP BY ?s

@@ -1,0 +1,7 @@
+PREFIX ns0: <http://www.inria.fr/2007/09/11/humans.rdfs#>
+SELECT DISTINCT ?x ?z
+WHERE {
+     ?x rdf:type ns0:Woman
+     ?x ns0:hasSpouse ?y
+     OPTIONAL {?x ns0:hasChild ?z}
+}

@@ -1,0 +1,19 @@
+@prefix cons: <http://labd/2015/ex3/cons#> .
+@prefix ns0: <http://labd/2015/ex3/inst#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+<http://labd/2015/ex3/cons#a> cons:b
+ [ rdf:first "a";
+ rdf:rest [ rdf:first "b";
+ 			rdf:rest [ rdf:first "c";
+ 					   rdf:rest [ rdf:first "d";
+ 								  rdf:rest rdf:nil ]
+					 ]
+		  ]
+ ] .
+
+<http://labd/2015/ex3/cons#a> cons:b (
+ "a"
+ "b"
+ "c"
+ "d"
+) .

@@ -1,0 +1,8 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/>
+SELECT ?y
+WHERE
+{
+	?x foaf:name "James Bond"
+	?x foaf:knows ?y
+	FILTER NOT EXISTS {?y foaf:phone ?a}
+}

@@ -1,0 +1,89 @@
+TP 11 LABD - FRANQUENOUILLE
+
++----------------------------------+
+
+Exercice 1
+ 1/ Dans le sujet, on peut remarquer qu'il y a une erreur sur la ligne suivante : x rdf:type ?t. Il s'agit de "?x" et non de "x". Avec cette requete, on liste tous les triplets dont l'instance a un type. On obtient 33 résultats. Cela est du au fait qu'on souhaite lister tous les types des instances.
+    <result>
+	<binding name='x'><uri>http://www.inria.fr/2007/09/11/humans.rdfs-instances#John</uri></binding>
+	<binding name='t'><uri>http://www.inria.fr/2007/09/11/humans.rdfs#Person</uri></binding>
+	</result>
+
+ 2/ On liste tous les personnes qui sont mariées. Avec cette requete, on obtient 6 resultats
+
+ 3/ voir fichier ex1-3.rq
+
+ 4/ voir fichiers ex1-4.*.rq
+
+ 5/ voir fichiers ex1-5.*.rq
+
+ 6/ voir fichiers ex1-6.*.rq
+	3- On obtient 5 réponses et Gaston est un doublon.
+	4- On a donc 4 réponses maintenant.
+ 
+ 7/ voir fichier ex1-7.rq 
+
+ 8/ voir fichier ex1-8.rq 
+
+ 9/ voir fichier ex1-9.rq 
+
+
+Exercice 2
+ 1/ espace de nom http://www.inria.fr/2007/09/11/humans.rdfs
+	<#hasAncestor> rdfs:domain <#Animal>
+	<#hasAncestor> rdfs:range <#Animal>
+
+	<#hasFather> rdfs:range <#Male>
+
+	<#hasMother> rdfs:range <#Female>
+
+	<#hasBrother> rdfs:domain <#Animal>
+	<#hasBrother> rdfs:range <#Male>
+
+	<#hasSister> rdfs:domain <#Animal>
+	<#hasSister> rdfs:range <#Female>
+
+	<#hasFriend> rdfs:domain <#Person>
+	<#hasFriend> rdfs:range <#Person>
+
+	<#shoesize> rdfs:domain <#Person>
+
+	<#shirtsize> rdfs:domain <#Person>
+
+	<#trouserssize> rdfs:domain <#Person>
+
+	<#hasSpouse> rdfs:domain <#Person>
+	<#hasSpouse> rdfs:range <#Person>
+
+	La propriété age peut etre appliquée a l'ensemble des classes.
+
+ voir fichiers ex2-*.rq
+
+
+Exercice 3
+
+voir fichiers ex3-*.rq
+
+ 1/ 1- On obtient 0 résultat pour le cas avec Animal et 7 pour Person
+
+    2- On obtient 17 résultats pour le cas avec Animal et 17 pour Person
+	Ceci est du au fichier rdfs car ce dernier fait les différents liens entre les ressources.
+
+ 2/ 1- On obtient un seul résultat. Cela est du au fait qu'un seul homme possède la propriété hasSpouse. Le reste de ces attributs sont attribués à des femmes
+	
+	2- Le résultat est toujours le même car Karl est juste précisé qu'il s'agit d'une personne (pareil pour William) mais pas qu'il s'agit d'un homme.
+
+ 3/ On obtient 7 résultats. Ces Personnes ont un autre type affecté 'Lecturer' dans leur déclaration RDF
+
+	PREFIX humans: <http://www.inria.fr/2007/09/11/humans.rdfs#>
+	SELECT DISTINCT * WHERE
+	{
+	?x a humans:Male
+	?x a humans:Person
+	}
+
+	John est présent car c'est une personne et il es le père de Mark donc il est un Male.
+
+ 4/ Les relations hasAncestor sont construites via les propriétés hasFather, hasMother et hasParent.
+
+

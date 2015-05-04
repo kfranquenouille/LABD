@@ -1,0 +1,8 @@
+PREFIX ns0: <http://www.inria.fr/2007/09/11/humans.rdfs#>
+CONSTRUCT {
+     ?y ns0:hasFriend ?x
+}
+WHERE {
+     ?x ns0:hasFriend ?y
+     FILTER NOT EXISTS {?y ns0:hasFriend ?x}
+}

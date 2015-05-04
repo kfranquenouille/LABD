@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<championnat xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="championnat.xsd">
+  <clubs>
+    <club id="OL">
+      <nom>Olympique Lyonnais</nom>
+      <ville>Lyon</ville>
+    </club>
+    <club id="OM">
+      <nom>Olympique Marseillais</nom>
+      <ville>Marseille</ville>
+    </club>
+    <club id="PSG">
+      <nom>Paris Saint Germain</nom>
+      <ville>Paris</ville>
+    </club>
+    <club id="ASSE">
+      <nom>Association Sportive de Saint Etienne</nom>
+      <ville>Saint Etienne</ville>
+    </club>
+    <club id="ASM">
+      <nom>A.S. Monaco</nom>
+      <ville>Monaco</ville>
+    </club>
+    <club id="Montp">
+      <nom>Montpellier Herault Sport Club</nom>
+      <ville>Montpellier</ville>
+    </club>
+    <club id="Bdx">
+      <nom>Football club des Girondins de Bordeaux</nom>
+      <ville>Bordeaux</ville>
+    </club>
+    <club id="OGCN">
+      <nom>Olympique Gymnaste Club de Nice Cote d'Azur</nom>
+      <ville>Nice</ville>
+    </club>
+    <club id="FCN">
+      <nom>Football Club de Nantes</nom>
+      <ville>Nantes</ville>
+    </club>
+    <club id="Ren">
+      <nom>Stade Rennais Football Club</nom>
+      <ville>Rennes</ville>
+    </club>
+    <club id="Reims">
+      <nom>Stade Reims</nom>
+      <ville>Reims</ville>
+    </club>
+    <club id="EAG">
+      <nom>En Avant de Guingamp</nom>
+      <ville>Guingamp</ville>
+    </club>
+    <club id="LOSC">
+      <nom>Lille Olympique Sporting Club</nom>
+      <ville>Lille</ville>
+    </club>
+    <club id="Bastia">
+      <nom>Racing Club Bastia</nom>
+      <ville>Bastia</ville>
+    </club>
+    <club id="Lor">
+      <nom>Football Club Lorient-Bretagne Sud</nom>
+      <ville>Lorient</ville>
+    </club>
+    <club id="ETG">
+      <nom>Evian Thonon Gaillard FC</nom>
+      <ville>Evian</ville>
+    </club>
+    <club id="Tou">
+      <nom>Toulouse Football Club</nom>
+      <ville>Toulouse</ville>
+    </club>
+    <club id="Cae">
+      <nom>Caen</nom>
+      <ville>Caen</ville>
+    </club>
+    <club id="RCL">
+      <nom>Racing Club de Lens</nom>
+      <ville>Lens</ville>
+    </club>
+    <club id="FCM">
+      <nom>Football Club de Metz</nom>
+      <ville>Metz</ville>
+    </club>
+  </clubs>
+  <journees>
+    <journee num="1">
+      <date>
+        2014-09-04
+      </date>
+      <rencontre>
+        <clubReceveur>OL</clubReceveur>
+        <clubInvite>OM</clubInvite>
+        <score>0 0</score>
+      </rencontre>
+      <rencontre>
+        <clubReceveur>PSG</clubReceveur>
+        <clubInvite>ASSE</clubInvite>
+        <score>0 2</score>
+      </rencontre>
+      <rencontre>
+        <clubReceveur>Montp</clubReceveur>
+        <clubInvite>ASM</clubInvite>
+        <score>1 0</score>
+      </rencontre>
+      <rencontre>
+        <clubReceveur>Bdx</clubReceveur>
+        <clubInvite>OGCN</clubInvite>
+        <score>0 0</score>
+      </rencontre>
+      <rencontre>
+        <clubReceveur>FCN</clubReceveur>
+        <clubInvite>Ren</clubInvite>
+        <score>0 0</score>
+      </rencontre>
+      <rencontre>
+        <clubReceveur>Reims</clubReceveur>
+        <clubInvite>EAG</clubInvite>
+        <score>3 1</score>
+      </rencontre>
+      <rencontre>
+        <clubReceveur>LOSC</clubReceveur>
+        <clubInvite>Bastia</clubInvite>
+        <score>1 1</score>
+      </rencontre>
+      <rencontre>
+        <clubReceveur>Lor</clubReceveur>
+        <clubInvite>ETG</clubInvite>
+        <score>1 0</score>
+      </rencontre>
+      <rencontre>
+        <clubReceveur>Tou</clubReceveur>
+        <clubInvite>Cae</clubInvite>
+        <score>1 0</score>
+      </rencontre>
+      <rencontre>
+        <clubReceveur>RCL</clubReceveur>
+        <clubInvite>FCM</clubInvite>
+        <score>2 0</score>
+      </rencontre>
+    </journee>
+    <journee num="20">
+      <date>
+        2015-06-18
+      </date>
+      <rencontre>
+        <clubReceveur>OM</clubReceveur>
+        <clubInvite>OL</clubInvite>
+        <score>0 0</score>
+      </rencontre>
+      <rencontre>
+        <clubReceveur>ASSE</clubReceveur>
+        <clubInvite>PSG</clubInvite>
+        <score>0 2</score>
+      </rencontre>
+      <rencontre>
+        <clubReceveur>ASM</clubReceveur>
+        <clubInvite>Montp</clubInvite>
+        <score>1 0</score>
+      </rencontre>
+      <rencontre>
+        <clubReceveur>OGCN</clubReceveur>
+        <clubInvite>Bdx</clubInvite>
+        <score>0 0</score>
+      </rencontre>
+      <rencontre>
+        <clubReceveur>Ren</clubReceveur>
+        <clubInvite>FCN</clubInvite>
+        <score>0 0</score>
+      </rencontre>
+      <rencontre>
+        <clubReceveur>EAG</clubReceveur>
+        <clubInvite>Reims</clubInvite>
+        <score>3 1</score>
+      </rencontre>
+      <rencontre>
+        <clubReceveur>Bastia</clubReceveur>
+        <clubInvite>LOSC</clubInvite>
+        <score>1 1</score>
+      </rencontre>
+      <rencontre>
+        <clubReceveur>ETG</clubReceveur>
+        <clubInvite>Lor</clubInvite>
+        <score>1 0</score>
+      </rencontre>
+      <rencontre>
+        <clubReceveur>Cae</clubReceveur>
+        <clubInvite>Tou</clubInvite>
+        <score>1 0</score>
+      </rencontre>
+      <rencontre>
+        <clubReceveur>FCM</clubReceveur>
+        <clubInvite>RCL</clubInvite>
+        <score>2 0</score>
+      </rencontre>
+    </journee>
+  </journees>
+</championnat>

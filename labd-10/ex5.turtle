@@ -1,0 +1,24 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix conc: <http://www.labd.org/ex5/conc#> .
+@prefix inst: <http://www.labd.org/ex5/inst#> .
+
+conc:Sport a rdfs:Class .
+
+conc:Sport_collectif a rdfs:Class ;
+    rdfs:subClassOf conc:Sport .
+
+conc:Sport_individuel a rdfs:Class ;
+    rdfs:subClassOf conc:Sport .
+
+conc:Football a rdfs:Class ;
+    rdfs:subClassOf conc:Sport_collectif .
+
+conc:Basketball a rdfs:Class ;
+    rdfs:subClassOf conc:Sport_collectif .
+
+conc:Regles inst:est [
+ a rdf:Alt ;
+ rdf:_1 "FIBA" ;
+ rdf:_2 "NBA" ;
+ ] .

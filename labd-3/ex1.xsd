@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+	<xsd:simpleType name="question1">
+		<xsd:restriction base="xsd:time">
+		<xsd:minInclusive value="02:30:00"/>
+		<xsd:maxInclusive value="16:50:00"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="question2">
+		<xsd:restriction base="xsd:decimal">
+		<xsd:minInclusive value="-3476.4"/>
+		<xsd:maxExclusive value="5"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="question3">
+		<xsd:restriction base="xsd:string">
+		<xsd:pattern value='[a-zA-Z]{4}'/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="question4">
+		<xsd:restriction base="xsd:string">
+		<xsd:pattern value='jpg|gif|png'/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="question5">
+		<xsd:restriction base="xsd:positiveInteger">
+		<xsd:pattern value='[0-9]{13}'/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:element name="exo">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="q1" type="question1"/>
+				<xsd:element name="q2" type="question2"/>
+				<xsd:element name="q3" type="question3"/>
+				<xsd:element name="q4" type="question4"/>
+				<xsd:element name="q5" type="question5"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+</xsd:schema>

@@ -1,0 +1,10 @@
+@prefix sps:  <http://www.labd.org/2015/sport/schema#> 
+@prefix hms:  <http://www.inria.fr/2007/09/11/humans.rdfs#> 
+@prefix spi: <http://www.labd.org/2015/sport/instance#>
+SELECT ?x ?y ?z WHERE
+{
+	?class rdfs:subClassOf sps:Sport
+	?x a ?class
+	?x ?y ?z
+	
+}

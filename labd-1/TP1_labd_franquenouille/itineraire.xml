@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE itineraire SYSTEM "itineraire.dtd">
+<itineraire>
+	<depart>Seclin - Centre hospitalier</depart>
+	<arrivee>Roubaix - Avenue Motte</arrivee>
+	<date>Mardi 22 janvier</date>
+	<heure>12h35</heure>
+	<mode>Métro-Tramway-Bus-Car</mode>
+	<preferences>Arriver le plus rapidement</preferences>
+	<vitesseMarche>Normale</vitesseMarche>
+	<duree>1h27</duree>
+	<etapes>
+		<etape netape="e1">
+			<depart>Seclin - Centre hospitalier</depart>
+			<arrivee>Seclin - Hôtel de Ville</arrivee>
+			<mode>pied</mode>
+			<duree>0h13</duree>
+		</etape>
+		<etape netape="e2">
+			<heure>14h51</heure>
+			<mode ligne="52">Bus TRANSPOLE</mode>
+			<direction>Lille - Porte des Postes</direction>
+			<duree>0h23</duree>
+		</etape>
+		<etape netape="e3">
+			<heure>15h14</heure>
+			<arrivee>Lille - CHR B Calmette</arrivee>
+		</etape>
+		<etape netape="e4">
+			<correspondance></correspondance>
+			<duree>0h04</duree>
+		</etape>
+		<etape netape="e5">
+			<heure>15h18</heure>
+			<mode ligne="1">Métro TRANSPOLE</mode>
+			<direction>Villeneuve d’Ascq - 4 Cantons Grand Stade</direction>
+			<duree>0h03</duree>
+		</etape>
+		<etape netape="e6">
+			<heure>15h21</heure>
+			<arrivee>Lille - Porte des Postes</arrivee>
+		</etape>
+		<etape netape="e7">
+			<correspondance></correspondance>
+			<duree>0h06</duree>
+		</etape>
+		<etape netape="e8">
+			<heure>15h27</heure>
+			<mode ligne="2">Métro TRANSPOLE</mode>
+			<direction>Tourcoing - CH Dron</direction>
+			<duree>0h25</duree>
+		</etape>
+		<etape netape="e9">
+			<heure>15h52</heure>
+			<arrivee>Roubaix - Epeule Montesquieu</arrivee>
+		</etape>
+		<etape netape="e10">
+			<correspondance></correspondance>
+			<duree>0h04</duree>
+		</etape>
+		<etape netape="e11">
+			<heure>15h56</heure>
+			<mode ligne="25">Bus TRANSPOLE</mode>
+			<direction>Roubaix - fraternité</direction>
+			<duree>0h09</duree>
+		</etape>
+		<etape netape="e12">
+			<heure>16h05</heure>
+			<arrivee>Roubaix - Avenue Motte</arrivee>
+		</etape>
+	</etapes>
+</itineraire>

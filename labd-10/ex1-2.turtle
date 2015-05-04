@@ -1,0 +1,27 @@
+@prefix cons: <http://labd/2015/ex1/concept#> .
+@prefix inst: <http://labd/2015/ex1/inst#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://labd/2015/ex1/inst#Voiture>
+  rdfs:comment "La classe voiture" ;
+  a rdfs:Class .
+
+<http://labd/2015/ex1/inst#Societe>
+  rdfs:comment "La classe societe" ;
+  a rdfs:Class .
+
+<http://labd/2015/ex1/inst#Marque>
+  rdfs:range rdfs:Literal ;
+  a rdf:Property ;
+  rdfs:domain <http://labd/2015/ex1/inst#Voiture> .
+
+<hhttp://labd/2015/ex1/concept#C4> cons:est [
+    a inst:Voiture ;
+    inst:Marque "Citroen" ;
+  ] .
+
+<http://labd/2015/ex1/concept#Citroen> cons:a_ete_fondee [
+    a inst:Societe ;
+    rdfs:Literal "1919" ;
+  ] .

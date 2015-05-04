@@ -1,0 +1,13 @@
+PREFIX ns0: <http://www.inria.fr/2007/09/11/humans.rdfs#>
+SELECT ?x ?y 
+WHERE {
+     {
+          ?x rdf:type ns0:Person
+          ?x ns0:shoesize ?y
+          FILTER (xsd:integer(?y) > 8)
+    }  
+     UNION {
+          ?x ns0:shirtsize ?y
+          FILTER (xsd:integer(?y) > 12)
+     }
+}

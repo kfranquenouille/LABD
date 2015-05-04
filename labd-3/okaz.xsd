@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+	<xsd:complexType name="typeVoiture">
+		<xsd:sequence>
+			<xsd:element name="marque" type="xsd:string" maxOccurs="unbounded"/>
+			<xsd:element name="modele" type="xsd:string" maxOccurs="unbounded"/>
+		</xsd:sequence>
+		<xsd:attribute name="prix" type="xsd:positiveInteger"/>
+	</xsd:complexType>
+	
+	<xsd:complexType name="typeNeuf">
+		<xsd:sequence>
+				<xsd:element name="item" type="typeVoiture" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="typeVoitureOccase">
+		<xsd:complexContent>
+			<xsd:extension base="typeVoiture">
+				<xsd:sequence>
+					<xsd:element name="annee" type="xsd:positiveInteger" maxOccurs="1"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="typeOccase">
+		<xsd:sequence>
+				<xsd:element name="item" type="typeVoitureOccase" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:element name="stock">
+		<xsd:complexType>
+			<xsd:sequence>
+					<xsd:element name="occases" type="typeOccase" minOccurs="0" maxOccurs="unbounded"/>
+					<xsd:element name="neufs" type="typeNeuf" minOccurs="0" maxOccurs="unbounded"/>
+			</xsd:sequence>
+			<xsd:attribute name="nom" type="xsd:string" use="required"/>
+		</xsd:complexType>
+	</xsd:element>
+
+</xsd:schema>

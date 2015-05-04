@@ -1,0 +1,18 @@
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+SELECT DISTINCT ?f 
+WHERE {
+	?x rdf:type foaf:Person
+	?z rdf:type foaf:Person
+	?x foaf:name ?y
+	?z foaf:name ?f
+	{
+		?x foaf:knows ?z
+	} UNION {
+		?x foaf:knows ?i
+		FILTER EXISTS {
+			?i foaf:knows ?z
+		}
+	}
+	FILTER (?y = "James Bond")
+	FILTER (?f != "James Bond")
+}

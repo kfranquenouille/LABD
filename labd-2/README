@@ -1,0 +1,95 @@
+TP2 LABD
+
+Kevin Franquenouille
+
+Exercice 1
+1- Quand titre="edition", il faut que la valeur du titre soir edition.
+   Quand titre=edition, il faut qu'il existe un champs titre et un champs edition qui sont de même valeur.
+
+   <titre>edition</titre>
+   <edition>edition</edition>
+
+2- 
+	1/ On prend les livres dont le titre est "labd" et il doit etre le dernier livre.
+	2/ On prend les livres dont le titre est "labd" puis dans cette liste on choisi le dernier.
+	3/ On choisi d'abord le dernier livre puis ensuite on choisi le titre "labd". Il se peut qu'il n'y ait pas de solution avec cette expression.
+
+	Les expressions 1 et 3 donnent le même résultat. Pour voir un exemple, voir le fichier ex1-1.xml
+
+3- La différence est que pour /descendant::livre[1] on récupère la 1ere occurence que l'on rencontre alors que pour //livre[1] on récupère tous les premiers livres.
+	voir fichier ex1.xml
+
+
+Exercice 2
+1- /fruit/producteur
+
+2- //legume[origine = "Espagne"]
+
+3- //fruit[@type="clementine" and @calibre="1"]/bio/..
+
+4- //produits/*/origine[@region = "Bretagne"]/../producteur
+
+
+Exercice 3
+
++--------------- Pour recettes1.xml ---------------+
+1- //titre
+
+2- //nom_ing
+
+3- //recette[2]/titre
+
+4- //recette//etape[last()]
+
+5- count(//recette)
+
+6- //recette[count(.//ingredient) < 7]
+
+7- //recette/titre[count(..//ingredient) < 7]
+
+8- //recette[contains(.//ingredient,"farine")]
+
+9- //recette[contains(.//categorie, "entrée") or contains(.//categorie, "Entrée")]
+
++--------------- Pour recettes2.xml ---------------+
+1- //titre
+
+2- //ingredient
+
+3- //recette[2]/titre
+
+4- //recette//etape[last()]
+
+5- count(//recette)
+
+6- //recette[count(.//ing-recette) < 7]
+
+7- //recette/titre[count(..//ing-recette) < 7]
+
+8- //recette[//ingredient[contains(.,"farine")]=.//ing-recette/@ingredient]
+
+9- //recette[contains(@categ, "entree")]
+
+
+Exercice 4
+1- count(//dict/dict/dict)
+
+2- //dict/dict/dict/key[node()="Album"]/following-sibling::*[1]
+
+3- //dict/dict/dict/key[node()="Genre"]/following-sibling::*[1]
+
+4- count(//dict/dict/dict[contains(./key[node()="Genre"]/following-sibling::*[1], "Jazz")])
+
+5- //dict/dict/dict/key[node()="Genre"]/following-sibling::*[1]/.[not(preceding::string = .)]
+
+6- //dict/dict/dict/key[node()="Name"]/following-sibling::*[1]/.[../key[node()="Play Count"]/following-sibling::*[1]/text() >= 1]
+   ou
+   //dict/dict/dict/key[node()="Name"]/following-sibling::*[1]/.[../*[contains(.,"Play Count")]]
+   ou
+   //dict/dict/dict/key[node()="Name"]/following-sibling::*[1]/.[../*[text()="Play Count"]]
+
+7- //dict/dict/dict/key[node()="Name"]/following-sibling::*[1]/.[not(../key[text()="Play Count"])]
+
+8- //dict/dict/dict/key[node()="Name"]/following-sibling::*[1]/.[../key[node()="Year"]/following-sibling::*[1]/.[text() = min(//dict/dict/dict/key[node()="Year"]/following-sibling::*[1]/text())]]
+
+	annee = min(//dict/dict/dict/key[node()="Year"]/following-sibling::*[1]/text())

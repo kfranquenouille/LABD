@@ -1,0 +1,31 @@
+TP 7 LABD
+
+Kevin FRANQUENOUILLE
+
++------------------------------------+
+
+Exercice 1 
+1/ On récupère le titre des livre dont l'année est supérieure à 1991 et que le publisher vaut Addison-Wesley
+
+2/ On affiche les auteurs de chaque livre avec comme format le nom du livre et 1 seul auteur. S'il y en a plusieurs, on a plusieurs fois le même titre mais avec un auteur dfférent.
+
+3/ Il s'agit de la même chose que précédement mais avec un tri par prénom dans l'ordre alphabétique.
+
+4/ Il s'agit de la même chose que précédement mais avec une fonction qui retourne pour chaque auteur, les livres dont il est auteur.
+
+5/ Pour chaque livre, on affiche l'auteur. S'il existe plusieurs auteurs, on affiche uniquement les 2 premiers et les auteurs sont remplacés pas la balise <et-al/>
+
+6/ Il s'agit de la même question que la 4 mais au lieu d'afficher les titres, on compte le nombre d'oeuvres.
+
+7/ On retourne le prix moyen des livres en fonction des années.
+
+
+Exercice 2
+1/ Voir le fichier surface.xq
+
+
+Exercice 3
+1/ voir qu1.xq
+
+2/ voir qu2.xq
+

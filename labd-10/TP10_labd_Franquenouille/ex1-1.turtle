@@ -1,0 +1,17 @@
+@prefix ns0: <http://labd/2015/ex1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://labd/2015/ex1#Voiture>
+  rdfs:comment "La classe voiture" ;
+  a rdfs:Class .
+
+<http://labd/2015/ex1#Marque>
+  rdfs:range rdfs:Literal ;
+  a rdf:Property ;
+  rdfs:domain <http://labd/2015/ex1#Voiture> .
+
+<http://labd/2015/ex1#C4> ns0:est [
+    a ns0:Voiture ;
+    ns0:Marque "Citroen" ;
+  ] .

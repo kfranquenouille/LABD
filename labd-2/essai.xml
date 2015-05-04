@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Major Version</key><integer>1</integer>
+	<key>Minor Version</key><integer>1</integer>
+	<key>Date</key><date>2015-01-18T14:54:16Z</date>
+	<key>Application Version</key><string>12.0.1.26</string>
+	<key>Features</key><integer>5</integer>
+	<key>Show Content Ratings</key><true/>
+	<key>Music Folder</key><string>file:///Users/yroos/Music/iTunes/iTunes%20Media/</string>
+	<key>Library Persistent ID</key><string>97B6232B3867766F</string>
+	<key>Tracks</key>
+	<dict>
+		<key>1823</key>
+		<dict>
+			<key>Track ID</key><integer>1823</integer>
+			<key>Name</key><string>St. Louis Gal</string>
+			<key>Artist</key><string>Cécile McLorin Salvant</string>
+			<key>Album</key><string>WomanChild</string>
+			<key>Genre</key><string>Jazz, Blues</string>
+			<key>Kind</key><string>Fichier audio AAC mis en correspondance</string>
+			<key>Size</key><integer>6469225</integer>
+			<key>Total Time</key><integer>181760</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Year</key><integer>2013</integer>
+			<key>Date Modified</key><date>2014-10-17T17:33:18Z</date>
+			<key>Date Added</key><date>2014-10-09T18:53:17Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>7B03173041ADE390</string>
+			<key>Track Type</key><string>File</string>
+			<key>Purchased</key><true/>
+			<key>Location</key><string>file:///Users/yroos/Music/iTunes/iTunes%20Media/Music/Ce%CC%81cile%20McLorin%20Salvant/WomanChild/01%20St.%20Louis%20Gal.m4a</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>22135</key>
+		<dict>
+			<key>Track ID</key><integer>22135</integer>
+			<key>Name</key><string>Back on My Stompin' Ground (After Hours)</string>
+			<key>Artist</key><string>Rory Gallagher</string>
+			<key>Album Artist</key><string>Rory Gallagher</string>
+			<key>Album</key><string>Irish Tour '74 - 40th Anniversary Edition</string>
+			<key>Genre</key><string>Rock</string>
+			<key>Kind</key><string>Fichier audio AAC</string>
+			<key>Size</key><integer>12815567</integer>
+			<key>Total Time</key><integer>372840</integer>
+			<key>Disc Number</key><integer>7</integer>
+			<key>Disc Count</key><integer>7</integer>
+			<key>Track Number</key><integer>9</integer>
+			<key>Track Count</key><integer>10</integer>
+			<key>Year</key><integer>2014</integer>
+			<key>Date Modified</key><date>2014-12-26T14:26:34Z</date>
+			<key>Date Added</key><date>2014-12-26T13:46:32Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>C10AD75A4E1C5546</string>
+			<key>Track Type</key><string>File</string>
+			<key>File Type</key><integer>1295270176</integer>
+			<key>Location</key><string>file:///Users/yroos/Music/iTunes/iTunes%20Media/Music/Rory%20Gallagher/Irish%20Tour%20'74%20-%2040th%20Anniversary%20Edition/7-09%20Back%20on%20My%20Stompin'%20Ground%20(After%20Hours).m4a</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>22137</key>
+		<dict>
+			<key>Track ID</key><integer>22137</integer>
+			<key>Name</key><string>Stompin' Ground (Alternate Version)</string>
+			<key>Artist</key><string>Rory Gallagher</string>
+			<key>Album Artist</key><string>Rory Gallagher</string>
+			<key>Album</key><string>Irish Tour '74 - 40th Anniversary Edition</string>
+			<key>Genre</key><string>Rock</string>
+			<key>Kind</key><string>Fichier audio AAC</string>
+			<key>Size</key><integer>13394246</integer>
+			<key>Total Time</key><integer>392240</integer>
+			<key>Disc Number</key><integer>7</integer>
+			<key>Disc Count</key><integer>7</integer>
+			<key>Track Number</key><integer>10</integer>
+			<key>Track Count</key><integer>10</integer>
+			<key>Year</key><integer>2014</integer>
+			<key>Date Modified</key><date>2014-12-26T14:26:34Z</date>
+			<key>Date Added</key><date>2014-12-26T13:46:52Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>A4AA8BD377569104</string>
+			<key>Track Type</key><string>File</string>
+			<key>File Type</key><integer>1295270176</integer>
+			<key>Location</key><string>file:///Users/yroos/Music/iTunes/iTunes%20Media/Music/Rory%20Gallagher/Irish%20Tour%20'74%20-%2040th%20Anniversary%20Edition/7-10%20Stompin'%20Ground%20(Alternate%20Version).m4a</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>22143</key>
+		<dict>
+			<key>Track ID</key><integer>22143</integer>
+			<key>Name</key><string>asaf-avidan-a-france-inter-2015</string>
+			<key>Artist</key><string>Asaf Avidan</string>
+			<key>Album</key><string>Asaf Avidan, live au 104</string>
+			<key>Kind</key><string>Fichier audio MPEG</string>
+			<key>Size</key><integer>111739694</integer>
+			<key>Total Time</key><integer>6977760</integer>
+			<key>Date Modified</key><date>2015-01-18T14:54:06Z</date>
+			<key>Date Added</key><date>2015-01-18T14:33:43Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>48000</integer>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>CFBF235FA67321B8</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file:///Users/yroos/Music/iTunes/iTunes%20Media/Music/Asaf%20Avidan/Asaf%20Avidan,%20live%20au%20104/asaf-avidan-a-france-inter-2015.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>12415</key>
+		<dict>
+			<key>Track ID</key><integer>12415</integer>
+			<key>Name</key><string>Stormy Monday</string>
+			<key>Artist</key><string>Eva Cassidy</string>
+			<key>Composer</key><string>T. Bone Walker</string>
+			<key>Album</key><string>FIP - Selection Blues</string>
+			<key>Genre</key><string>Blues</string>
+			<key>Kind</key><string>Fichier audio AAC mis en correspondance</string>
+			<key>Size</key><integer>12082698</integer>
+			<key>Total Time</key><integer>349066</integer>
+			<key>Track Number</key><integer>9</integer>
+			<key>Track Count</key><integer>16</integer>
+			<key>Year</key><integer>2004</integer>
+			<key>Date Modified</key><date>2014-10-18T08:02:09Z</date>
+			<key>Date Added</key><date>2011-10-27T20:55:58Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>1</integer>
+			<key>Play Date</key><integer>3429032760</integer>
+			<key>Play Date UTC</key><date>2012-08-28T20:06:00Z</date>
+			<key>Compilation</key><true/>
+			<key>Persistent ID</key><string>EA9129F92052F4E5</string>
+			<key>Track Type</key><string>File</string>
+			<key>Purchased</key><true/>
+			<key>Location</key><string>file:///Users/yroos/Music/iTunes/iTunes%20Media/Music/Compilations/FIP%20-%20Selection%20Blues/09%20Stormy%20Monday.m4a</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+	</dict>
+	<array>
+		<dict>
+			<key>Name</key><string>Bibliothèque</string>
+			<key>Master</key><true/>
+			<key>Playlist ID</key><integer>42367</integer>
+			<key>Playlist Persistent ID</key><string>63C51EAA67A0E9DE</string>
+			<key>Visible</key><false/>
+			<key>All Items</key><true/>
+			<key>Playlist Items</key>
+			<array>
+				<dict>
+					<key>Track ID</key><integer>14115</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>14291</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>14103</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>14119</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>14111</integer>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Name</key><string>GarageBand</string>
+			<key>Playlist ID</key><integer>62770</integer>
+			<key>Playlist Persistent ID</key><string>568C8D604D8F533B</string>
+			<key>All Items</key><true/>
+			<key>Playlist Items</key>
+			<array>
+				<dict>
+					<key>Track ID</key><integer>1821</integer>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Name</key><string>PLayback</string>
+			<key>Playlist ID</key><integer>62774</integer>
+			<key>Playlist Persistent ID</key><string>49437CF5F96BAEB3</string>
+			<key>All Items</key><true/>
+			<key>Playlist Items</key>
+			<array>
+				<dict>
+					<key>Track ID</key><integer>14003</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>13553</integer>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Name</key><string>Radios</string>
+			<key>Playlist ID</key><integer>62779</integer>
+			<key>Playlist Persistent ID</key><string>969EB81F3FB0D47A</string>
+			<key>All Items</key><true/>
+			<key>Playlist Items</key>
+			<array>
+				<dict>
+					<key>Track ID</key><integer>1811</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>1807</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>1813</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>1809</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>1815</integer>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

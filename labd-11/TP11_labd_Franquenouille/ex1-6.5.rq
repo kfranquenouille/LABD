@@ -1,0 +1,6 @@
+PREFIX ns0: <http://www.inria.fr/2007/09/11/humans.rdfs#>
+SELECT DISTINCT ?x
+WHERE {
+     ?x rdf:type ns0:Man
+     FILTER NOT EXISTS {?x ns0:hasChild ?y}
+}

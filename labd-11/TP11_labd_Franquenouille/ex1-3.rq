@@ -1,0 +1,5 @@
+PREFIX ns0: <http://www.inria.fr/2007/09/11/humans.rdfs#>
+SELECT * WHERE {
+     ?x ns0:age ?y
+     FILTER (xsd:integer(?y) > 20)
+}

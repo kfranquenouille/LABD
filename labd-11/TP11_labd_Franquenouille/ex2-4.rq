@@ -1,0 +1,8 @@
+PREFIX ns0: <http://www.inria.fr/2007/09/11/humans.rdfs#>
+SELECT ?y ?x
+WHERE {
+     ns0:shoesize rdfs:label ?y
+     ns0:shoesize rdfs:comment ?x
+     FILTER(LANG(?y) = "" || LANGMATCHES(LANG(?y), "fr"))
+     FILTER(LANG(?x) = "" || LANGMATCHES(LANG(?x), "fr"))
+}
